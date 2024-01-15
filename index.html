@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-wrap ml-10 mr-10">
+      <!-- Content 1-->
+      <div>
+        <div class="container-content">
+          <div class="content">
+            <!-- Header -->
+            <div class="header">
+              <img
+                class="logo"
+                src="./images/dhl-logo.png"
+                alt="Courier Logo"
+              />
+
+              <img
+                class="logo"
+                src="./images/shopee-logo.png"
+                alt="Ecommerce Logo"
+              />
+
+              <img class="barcode" src="./images/barcode.png" alt="Barcode" />
+            </div>
+          </div>
+
+          <div class="flex gap-1 mt-2">
+            <!-- Left Side -->
+            <div class="">
+              <!-- Order Details -->
+              <table class="border-black mb-0.5 table-left">
+                <tr>
+                  <th class="text-left" colspan="2">Order Details</th>
+                </tr>
+                <tr>
+                  <td>Ship By Date:</td>
+                  <td>15-01-2024</td>
+                </tr>
+                <tr>
+                  <td>Weight (kg):</td>
+                  <td>0.88</td>
+                </tr>
+                <tr>
+                  <td>Order ID:</td>
+                  <td>240111KW8CP3XW</td>
+                </tr>
+              </table>
+
+              <!-- Sender Details -->
+              <table class="border-black table-left">
+                <tr>
+                  <th class="text-left" colspan="2">
+                    Sender Details (Pengirim)
+                  </th>
+                </tr>
+                <tr>
+                  <td style="max-width: 200px; width: 100vw">Name:</td>
+                  <td>Beryl's Chocolate Official Store</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>0162578255</td>
+                </tr>
+                <tr>
+                  <td class="flex item-start">Address:</td>
+                  <td>
+                    No. 2 Jalan Raya 7/1 Kawasan Perindustrian Seri Kembangan
+                    Selangor Selangor Malaysia
+                  </td>
+                </tr>
+                <tr>
+                  <td>Postcode:</td>
+                  <td>43300</td>
+                </tr>
+
+                <!-- Recipient Details -->
+                <tr>
+                  <th class="text-left" colspan="2">
+                    Recipient Details(Penerima)
+                  </th>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>Dyla Razak</td>
+                </tr>
+                <tr>
+                  <td class="flex item-start">Address:</td>
+                  <td>
+                    No. 54 Jalan Jaya 3/10 Taman Pagoh Jaya, Muar, 84600, Johor
+                  </td>
+                </tr>
+                <tr>
+                  <td>Postcode:</td>
+                  <td>84600</td>
+                </tr>
+
+                <!-- POD -->
+                <tr>
+                  <th class="text-left" colspan="2">POD</th>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I.C:</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Signature:</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Right Side -->
+            <div class="">
+              <!-- Order Details Courier -->
+              <table class="border-black mb-0.5 table-right">
+                <tr>
+                  <th>Order Details (Courier)</th>
+                </tr>
+                <tr class="flex justify-center items-center">
+                  <td class="text-3xl font-bold p-5">PDO</td>
+                </tr>
+              </table>
+
+              <!-- Code -->
+              <table class="border-black table-right">
+                <tr>
+                  <td class="border border-black p-3.5"></td>
+                </tr>
+                <tr
+                  class="flex justify-center items-center border-b border-black"
+                >
+                  <td class="text-3xl font-semibold p-1">MYMUA1</td>
+                </tr>
+                <tr
+                  class="flex justify-center items-center border-b border-black"
+                >
+                  <td class="text-lg font-semibold">SOU2</td>
+                </tr>
+                <tr>
+                  <td class="border-b border-black p-3.5"></td>
+                </tr>
+                <tr
+                  class="flex justify-center items-center border-b border-black"
+                >
+                  <td class="font-bold text-3xl p-2">84600</td>
+                </tr>
+                <tr
+                  class="flex justify-center item-center border-b border-black"
+                >
+                  <td class="font-semibold text-xl p-1">HOME</td>
+                </tr>
+                <tr class="flex justify-center item-center">
+                  <td class="p-2">
+                    <img src="./images/qrcode.png" alt="QRcode" />
+                  </td>
+                </tr>
+                <tr
+                  class="flex justify-center item-center border-b border-black"
+                >
+                  <td class="">5920153063600204</td>
+                </tr>
+                <tr>
+                  <td class="p-3.5"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div></div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="container mt-6">
+        <div class="flex flex-col justify-center items-center">
+          <p>SILA PASTIKAN ANDA MERAKAM VIDEO SEMASA MEMBUKA BUNGKUSAN</p>
+          <p>打开前请务必记录整个过程</p>
+          <p>PLEASE BE SURE TO RECORD FULL VIDEO DURING UNPACKING.</p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <!-- Content 3 -->
+      <div>
+        <!-- Header -->
+        <div class="flex">
+          <div>
+            <p>LIST OF ITEMS</p>
+            <img
+              src="./images//shopee-logo.png"
+              alt="Ecommerce Logo"
+              width="150px"
+            />
+          </div>
+          <div>
+            <p class="text-right">Order ID: 30626</p>
+            <p class="text-right">Marketplace Order ID:</p>
+            <p class="text-right">240111KWBCP3XW</p>
+            <p class="text-right">Logistic Company: DHL eCommerce</p>
+            <p class="text-right">Tracking No: 5920153063600204</p>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Product</th>
+            <th>Variant</th>
+            <th>Qty</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Beryl's Dark Chocolate (280g) SKU:(FCMD-MY0280-0083) 528094</td>
+            <td></td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        <div>## Total Quantity 1 ##</div>
+      </div>
+    </div>
+  </body>
+</html>
