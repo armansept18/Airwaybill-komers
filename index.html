@@ -9,27 +9,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="flex flex-wrap ml-10 mr-10">
+    <div class="flex flex-wrap ml-5 mr-5">
       <!-- Content 1-->
-      <div>
+      <div class="w-full sm:w-auto">
         <div class="container-content">
-          <div class="content">
-            <!-- Header -->
-            <div class="header">
-              <img
-                class="logo"
-                src="./images/dhl-logo.png"
-                alt="Courier Logo"
-              />
+          <!-- Header -->
+          <div
+            class="header-content flex sm:justify-between item-center gap-1 sm:gap-6"
+          >
+            <img
+              class="w-14 object-contain sm:w-20 sm:object-contain"
+              src="./images/dhl-logo.png"
+              alt="Courier Logo"
+            />
+            <img
+              class="w-14 object-contain sm:w-20 sm:object-contain"
+              src="./images/shopee-logo.png"
+              alt="Ecommerce Logo"
+            />
 
-              <img
-                class="logo"
-                src="./images/shopee-logo.png"
-                alt="Ecommerce Logo"
-              />
-
-              <img class="barcode" src="./images/barcode.png" alt="Barcode" />
-            </div>
+            <img
+              class="w-40 object-contain sm:w-72"
+              src="./images/barcode.png"
+              alt="Barcode"
+            />
           </div>
 
           <div class="flex gap-1 mt-2">
@@ -62,22 +65,25 @@
                   </th>
                 </tr>
                 <tr>
-                  <td style="max-width: 200px; width: 100vw">Name:</td>
+                  <td class="w-20 sm:w-28">Name:</td>
                   <td>Beryl's Chocolate Official Store</td>
                 </tr>
                 <tr>
-                  <td>Phone:</td>
+                  <td class="sm:w-28">Phone:</td>
                   <td>0162578255</td>
                 </tr>
                 <tr>
-                  <td class="flex item-start">Address:</td>
+                  <td class="flex item-start sm:w-28">Address:</td>
                   <td>
-                    No. 2 Jalan Raya 7/1 Kawasan Perindustrian Seri Kembangan
-                    Selangor Selangor Malaysia
+                    No. 2 Jalan Raya 7/1 <br />
+                    Kawasan Perindustrian Seri <br />
+                    Kembangan <br />
+                    Selangor Selangor <br />
+                    Malaysia
                   </td>
                 </tr>
                 <tr>
-                  <td>Postcode:</td>
+                  <td class="sm:w-28">Postcode:</td>
                   <td>43300</td>
                 </tr>
 
@@ -88,17 +94,18 @@
                   </th>
                 </tr>
                 <tr>
-                  <td>Name:</td>
+                  <td class="sm:w-28">Name:</td>
                   <td>Dyla Razak</td>
                 </tr>
                 <tr>
-                  <td class="flex item-start">Address:</td>
+                  <td class="flex item-start sm:w-28">Address:</td>
                   <td>
-                    No. 54 Jalan Jaya 3/10 Taman Pagoh Jaya, Muar, 84600, Johor
+                    No. 54 Jalan Jaya 3/10 <br />
+                    Taman Pagoh Jaya, Muar, 84600, Johor
                   </td>
                 </tr>
                 <tr>
-                  <td>Postcode:</td>
+                  <td class="sm:w-28">Postcode:</td>
                   <td>84600</td>
                 </tr>
 
@@ -107,15 +114,15 @@
                   <th class="text-left" colspan="2">POD</th>
                 </tr>
                 <tr>
-                  <td>Name:</td>
+                  <td class="sm:w-28">Name:</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>I.C:</td>
+                  <td class="sm:w-28">I.C:</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>Signature:</td>
+                  <td class="sm:w-28">Signature:</td>
                   <td></td>
                 </tr>
               </table>
@@ -126,10 +133,12 @@
               <!-- Order Details Courier -->
               <table class="border-black mb-0.5 table-right">
                 <tr>
-                  <th>Order Details (Courier)</th>
+                  <th class="p-0.5 sm:text-xs sm:p-1">
+                    Order Details (Courier)
+                  </th>
                 </tr>
                 <tr class="flex justify-center items-center">
-                  <td class="text-3xl font-bold p-5">PDO</td>
+                  <td class="text-lg p-1 sm:text-2xl font-bold sm:p-5">PDO</td>
                 </tr>
               </table>
 
@@ -141,29 +150,37 @@
                 <tr
                   class="flex justify-center items-center border-b border-black"
                 >
-                  <td class="text-3xl font-semibold p-1">MYMUA1</td>
+                  <td class="text-base sm:text-xl font-semibold sm:p-1">
+                    MYMUA1
+                  </td>
                 </tr>
                 <tr
                   class="flex justify-center items-center border-b border-black"
                 >
-                  <td class="text-lg font-semibold">SOU2</td>
+                  <td class="text-base sm:text-lg font-semibold">SOU2</td>
                 </tr>
                 <tr>
-                  <td class="border-b border-black p-3.5"></td>
+                  <td class="border-b border-black sm:p-3.5"></td>
                 </tr>
                 <tr
                   class="flex justify-center items-center border-b border-black"
                 >
-                  <td class="font-bold text-3xl p-2">84600</td>
+                  <td class="text-lg font-bold sm:text-2xl sm:p-2">84600</td>
                 </tr>
                 <tr
                   class="flex justify-center item-center border-b border-black"
                 >
-                  <td class="font-semibold text-xl p-1">HOME</td>
+                  <td class="text-base font-semibold sm:text-xl sm:p-1">
+                    HOME
+                  </td>
                 </tr>
                 <tr class="flex justify-center item-center">
-                  <td class="p-2">
-                    <img src="./images/qrcode.png" alt="QRcode" />
+                  <td class="p-2 sm:p-3">
+                    <img
+                      class="w-6 object-contain sm:w-24"
+                      src="./images/qrcode.png"
+                      alt="QRcode"
+                    />
                   </td>
                 </tr>
                 <tr
@@ -172,64 +189,89 @@
                   <td class="">5920153063600204</td>
                 </tr>
                 <tr>
-                  <td class="p-3.5"></td>
+                  <td class="pad-6"></td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
-
         <!-- Footer -->
-        <div></div>
+        <div class="mt-4 flex justify-center items-center">
+          <img
+            class="image-footer"
+            src="./images/fragile-logo.png"
+            alt="fragile"
+          />
+        </div>
       </div>
 
       <!-- Content 2 -->
-      <div class="container mt-6">
-        <div class="flex flex-col justify-center items-center">
-          <p>SILA PASTIKAN ANDA MERAKAM VIDEO SEMASA MEMBUKA BUNGKUSAN</p>
-          <p>打开前请务必记录整个过程</p>
-          <p>PLEASE BE SURE TO RECORD FULL VIDEO DURING UNPACKING.</p>
+      <div class="mt-6 ml-5 flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <p class="text-xl font-bold text-center">
+            SILA PASTIKAN ANDA MERAKAM VIDEO <br />
+            SEMASA MEMBUKA BUNGKUSAN
+          </p>
+          <p class="text-xl font-thin tracking-widest">
+            打开前请务必记录整个过程
+          </p>
+          <p class="text-xl font-bold text-center text-wrap">
+            PLEASE BE SURE TO RECORD FULL VIDEO <br />
+            DURING UNPACKING.
+          </p>
         </div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div class="flex justify-between items-center mt-4">
+          <img
+            src="./images/novideo.png"
+            alt="novideonoreturnnorefund"
+            class="w-36 sm:w-60 object-contain"
+          />
+          <img
+            src="./images/handlewithcare.png"
+            alt="handlewithcare"
+            class="w-24 sm:w-32 object-contain"
+          />
         </div>
       </div>
 
       <!-- Content 3 -->
-      <div>
+      <div class="content-3 mt-4">
         <!-- Header -->
-        <div class="flex">
-          <div>
-            <p>LIST OF ITEMS</p>
-            <img
-              src="./images//shopee-logo.png"
-              alt="Ecommerce Logo"
-              width="150px"
-            />
-          </div>
-          <div>
-            <p class="text-right">Order ID: 30626</p>
-            <p class="text-right">Marketplace Order ID:</p>
-            <p class="text-right">240111KWBCP3XW</p>
-            <p class="text-right">Logistic Company: DHL eCommerce</p>
-            <p class="text-right">Tracking No: 5920153063600204</p>
+        <div class="item-table">
+          <div class="flex justify-between mb-2">
+            <div>
+              <p class="text-lg font-semibold mb-2">LIST OF ITEMS</p>
+              <img
+                src="./images//shopee-logo.png"
+                alt="Ecommerce Logo"
+                width="180px"
+              />
+            </div>
+            <div class="font-semibold">
+              <p class="text-right">Order ID: 30626</p>
+              <p class="text-right">Marketplace Order ID:</p>
+              <p class="text-right">240111KWBCP3XW</p>
+              <p class="text-right">Logistic Company: DHL eCommerce</p>
+              <p class="text-right">Tracking No: 5920153063600204</p>
+            </div>
           </div>
         </div>
-
         <!-- Table -->
-        <table>
+        <table class="border border-black item-table mb-2">
           <tr>
             <th>#</th>
             <th>Product</th>
             <th>Variant</th>
             <th>Qty</th>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>Beryl's Dark Chocolate (280g) SKU:(FCMD-MY0280-0083) 528094</td>
+          <tr class="item-table">
+            <td class="text-center">1</td>
+            <td class="p-1">
+              Beryl's Dark Chocolate (280g) <br />
+              SKU:(FCsm-MY0280-0083) 528094
+            </td>
             <td></td>
-            <td>1</td>
+            <td class="text-center">1</td>
           </tr>
         </table>
 
