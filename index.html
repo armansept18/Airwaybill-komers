@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="flex flex-wrap ml-5 mr-5">
+    <div class="flex flex-col ml-5 mr-5">
       <!-- Content 1-->
-      <div class="w-full sm:w-auto">
+      <div class="w-full sm:w-auto content-section">
         <div class="container-content">
           <!-- Header -->
           <div
@@ -35,7 +35,7 @@
             />
           </div>
 
-          <div class="flex gap-1 mt-2">
+          <div class="flex gap-1 mt-5">
             <!-- Left Side -->
             <div class="">
               <!-- Order Details -->
@@ -145,14 +145,12 @@
               <!-- Code -->
               <table class="border-black table-right">
                 <tr>
-                  <td class="border border-black p-3.5"></td>
+                  <td class="border border-black p-2 sm:p-3.5"></td>
                 </tr>
                 <tr
                   class="flex justify-center items-center border-b border-black"
                 >
-                  <td class="text-base sm:text-xl font-semibold sm:p-1">
-                    MYMUA1
-                  </td>
+                  <td class="text-base sm:text-xl font-semibold p-1">MYMUA1</td>
                 </tr>
                 <tr
                   class="flex justify-center items-center border-b border-black"
@@ -160,7 +158,7 @@
                   <td class="text-base sm:text-lg font-semibold">SOU2</td>
                 </tr>
                 <tr>
-                  <td class="border-b border-black sm:p-3.5"></td>
+                  <td class="border-b border-black p-1 sm:p-3.5"></td>
                 </tr>
                 <tr
                   class="flex justify-center items-center border-b border-black"
@@ -177,7 +175,7 @@
                 <tr class="flex justify-center item-center">
                   <td class="p-2 sm:p-3">
                     <img
-                      class="w-6 object-contain sm:w-24"
+                      class="w-20 object-contain sm:w-24"
                       src="./images/qrcode.png"
                       alt="QRcode"
                     />
@@ -194,33 +192,33 @@
               </table>
             </div>
           </div>
-        </div>
-        <!-- Footer -->
-        <div class="mt-4 flex justify-center items-center">
-          <img
-            class="image-footer"
-            src="./images/fragile-logo.png"
-            alt="fragile"
-          />
+          <!-- Footer -->
+          <div class="mt-6 flex justify-center items-center">
+            <img
+              class="image-footer"
+              src="./images/fragile-logo.png"
+              alt="fragile"
+            />
+          </div>
         </div>
       </div>
 
       <!-- Content 2 -->
-      <div class="mt-6 ml-5 flex flex-col justify-center items-center">
+      <div
+        class="mt-10 ml-5 mr-5 flex flex-col justify-center items-center content-section"
+      >
         <div class="flex flex-col justify-center items-center gap-4">
           <p class="text-xl font-bold text-center">
-            SILA PASTIKAN ANDA MERAKAM VIDEO <br />
-            SEMASA MEMBUKA BUNGKUSAN
+            SILA PASTIKAN ANDA MERAKAM VIDEO SEMASA MEMBUKA BUNGKUSAN
           </p>
           <p class="text-xl font-thin tracking-widest">
             打开前请务必记录整个过程
           </p>
           <p class="text-xl font-bold text-center text-wrap">
-            PLEASE BE SURE TO RECORD FULL VIDEO <br />
-            DURING UNPACKING.
+            PLEASE BE SURE TO RECORD FULL VIDEO DURING UNPACKING.
           </p>
         </div>
-        <div class="flex justify-around items-center mt-4 gap-4">
+        <div class="flex justify-around items-center mt-10 gap-4">
           <img
             src="./images/novideo.png"
             alt="novideonoreturnnorefund"
@@ -235,16 +233,16 @@
       </div>
 
       <!-- Content 3 -->
-      <div class="content-3 mt-4">
+      <div class="flex flex-col items-center mt-4 content-section">
         <!-- Header -->
-        <div class="item-table">
-          <div class="flex justify-between mb-2">
-            <div>
+        <div class="content-3">
+          <div class="flex justify-between items-center mb-2">
+            <div class="flex flex-col self-start">
               <p class="text-lg font-semibold mb-2">LIST OF ITEMS</p>
               <img
                 src="./images//shopee-logo.png"
                 alt="Ecommerce Logo"
-                width="180px"
+                class="w-24 sm:w-32"
               />
             </div>
             <div class="font-semibold">
@@ -274,8 +272,7 @@
             <td class="text-center">1</td>
           </tr>
         </table>
-
-        <div>## Total Quantity 1 ##</div>
+        <div class="self-start">## Total Quantity 1 ##</div>
       </div>
     </div>
   </body>
