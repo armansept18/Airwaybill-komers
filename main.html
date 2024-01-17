@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tracking Number</title>
+  </head>
+  <style type="text/css">
+    body {
+      width: 90%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      padding: 8px;
+      margin: 10px;
+      border: 1px #000000 solid;
+      border-radius: 4px;
+    }
+    * {
+      box-sizing: border-box;
+      font-family: Arial;
+      -moz-box-sizing: border-box;
+      font-size: 12px;
+      /* font-weight: bold; */
+    }
+    .page {
+      width: 100%;
+      /* min-height: 148mm; */
+      /* border: 1px #d3d3d3 solid;
+      border-radius: 4px; */
+      background: white;
+    }
+    table {
+      max-width: 100vw;
+      width: 100%;
+      border: 1px solid #252525;
+      border-collapse: collapse;
+    }
+    th {
+      border: 1px solid #252525;
+    }
+    th,
+    td {
+      padding: 2px;
+    }
+    @page {
+      size: A6;
+      margin: 0;
+    }
+    @media print {
+      html,
+      body {
+        width: 105mm;
+        height: 148mm;
+      }
+      .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <!-- Content 1 -->
+      <div class="page">
+        <div>
+          <!-- Header -->
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <img
+              src="./images/dhl-logo.png"
+              alt="Courier Logo"
+              style="max-width: 80px; width: 100%"
+            />
+            <img
+              src="./images/shopee-logo.png"
+              alt="Ecommerce Logo"
+              style="max-width: 80px; width: 100%"
+            />
+            <div>
+              <img
+                src="./images/barcode.png"
+                alt="Barcode"
+                style="max-width: 180px; width: 100%"
+              />
+              <!-- <p>
+                <b>DHLXXXXXXXXXXXXX</b>
+              </p> -->
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: start;
+              margin-top: 10px;
+            "
+          >
+            <!-- Left Side -->
+            <div>
+              <!-- Order Details -->
+              <table style="margin-bottom: 1px">
+                <tr>
+                  <th style="text-align: left" colspan="2">Order Details</th>
+                </tr>
+                <tr>
+                  <td>Ship By Date:</td>
+                  <td>15-01-2024</td>
+                </tr>
+                <tr>
+                  <td>Weight (kg):</td>
+                  <td>0.88</td>
+                </tr>
+                <tr>
+                  <td>Order ID:</td>
+                  <td>240111KW8CP3XW</td>
+                </tr>
+              </table>
+
+              <!-- Sender Details -->
+              <table>
+                <tr>
+                  <th style="text-align: left" colspan="2">
+                    Sender Details (Pengirim)
+                  </th>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>Beryl's Chocolate Official Store</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>0162578255</td>
+                </tr>
+                <tr>
+                  <td style="display: flex; align-items: start">Address:</td>
+                  <td>
+                    No. 2 Jalan Raya 7/1 <br />
+                    Kawasan Perindustrian Seri <br />
+                    Kembangan <br />
+                    Selangor Selangor <br />
+                    Malaysia
+                  </td>
+                </tr>
+                <tr>
+                  <td>Postcode:</td>
+                  <td>43300</td>
+                </tr>
+
+                <!-- Recipient Details -->
+                <tr>
+                  <th style="text-align: left" colspan="2">
+                    Recipient Details(Penerima)
+                  </th>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>Dyla Razak</td>
+                </tr>
+                <tr>
+                  <td style="display: flex; align-items: start">Address:</td>
+                  <td>
+                    No. 54 Jalan Jaya 3/10 <br />
+                    Taman Pagoh Jaya, Muar, 84600, Johor
+                  </td>
+                </tr>
+                <tr>
+                  <td>Postcode:</td>
+                  <td>84600</td>
+                </tr>
+
+                <!-- POD -->
+                <tr>
+                  <th style="text-align: left" colspan="2">POD</th>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I.C:</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Signature:</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Right Side -->
+            <div style="margin-left: 2px">
+              <!-- Order Details Courier -->
+              <table style="margin-bottom: 1px">
+                <tr>
+                  <th style="text-align: left">Order Details(Courier)</th>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      text-align: center;
+                      padding: 10px;
+                      font-weight: bold;
+                      font-size: 24px;
+                    "
+                  >
+                    PDO
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Code -->
+              <table>
+                <tr>
+                  <td style="padding: 5px"></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      border: 1px solid #252525;
+                      text-align: center;
+                      padding: 10px;
+                      font-weight: 500;
+                      font-size: 18px;
+                    "
+                  >
+                    MYMUA1
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      border: 1px solid #252525;
+                      text-align: center;
+                      padding: 10px;
+                      font-weight: 500;
+                      font-size: 20px;
+                    "
+                  >
+                    SOU2
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px"></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      border: 1px solid #252525;
+                      text-align: center;
+                      padding: 10px;
+                      font-weight: 600;
+                      font-size: 24px;
+                    "
+                  >
+                    84600
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      border: 1px solid #252525;
+                      text-align: center;
+                      padding: 10px;
+                      font-weight: 500;
+                      font-size: 16px;
+                    "
+                  >
+                    HOME
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      border: 1px solid #252525;
+                      text-align: center;
+                      padding: 5px;
+                    "
+                  >
+                    <img
+                      src="./images/qrcode.png"
+                      alt="QRcode"
+                      style="max-width: 80px; width: 100%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px">5920153063600204</td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid #252525; padding: 1.5px"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 20px;
+            "
+          >
+            <img
+              src="./images/fragile-logo.png"
+              alt="fragile"
+              style="max-width: 300px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="page">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <p style="font-size: 18px; font-weight: 600">
+            SILA PASTIKAN ANDA MERAKAM VIDEO SEMASA MEMBUKA BUNGKUSAN
+          </p>
+          <p style="font-size: 18px; letter-spacing: 6px">
+            打开前请务必记录整个过程
+          </p>
+          <p style="font-size: 18px; font-weight: 600">
+            PLEASE BE SURE TO RECORD FULL VIDEO DURING UNPACKING.
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          "
+        >
+          <img
+            src="./images/novideo.png"
+            alt="novideonoreturnnorefund"
+            style="max-width: 200px; width: 100%"
+          />
+          <img
+            src="./images/handlewithcare.png"
+            alt="handlewithcare"
+            style="max-width: 110px; width: 100%"
+          />
+        </div>
+      </div>
+
+      <!-- Content 3 -->
+      <div class="page">
+        <!-- Header -->
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0 20px 0;
+          "
+        >
+          <div style="display: flex; flex-direction: column">
+            <span style="font-weight: 600; margin-bottom: 5px"
+              >LIST OF ITEMS</span
+            >
+            <img
+              src="./images//shopee-logo.png"
+              alt="Ecommerce Logo"
+              style="max-width: 200px; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              text-align: right;
+            "
+          >
+            <span style="font-weight: 600">Order ID: 30626</span>
+            <span style="font-weight: 600">Marketplace Order ID:</span>
+            <span style="font-weight: 600">240111KWBCP3XW</span>
+            <span style="font-weight: 600"
+              >Logistic Company: DHL eCommerce</span
+            >
+            <span style="font-weight: 600">Tracking No: 5920153063600204</span>
+          </div>
+        </div>
+        <!-- Table -->
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Product</th>
+            <th>Variant</th>
+            <th>Qty</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #252525; text-align: center">1</td>
+            <td style="border: 1px solid #252525">
+              Beryl's Dark Chocolate (280g) <br />
+              SKU:(FCsm-MY0280-0083) 528094
+            </td>
+            <td style="border: 1px solid #252525"></td>
+            <td style="border: 1px solid #252525; text-align: center">1</td>
+          </tr>
+        </table>
+        <div style="margin-top: 10px">## Total Quantity 1 ##</div>
+      </div>
+    </div>
+  </body>
+</html>
