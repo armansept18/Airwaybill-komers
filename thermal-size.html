@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Receipt</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Jost:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style type="text/css">
+    body {
+      width: 90%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      padding: 8px;
+      margin: 10px;
+      /* border: 1px #000000 solid; */
+      border-radius: 4px;
+    }
+    * {
+      box-sizing: border-box;
+      font-family: Jost, Roboto;
+      -moz-box-sizing: border-box;
+      font-size: 12px;
+    }
+    .page {
+      width: 100%;
+      /* min-height: 148mm; */
+      border: 1px #d3d3d3 solid;
+      border-radius: 4px;
+      background: white;
+    }
+    @page {
+      size: A6;
+      margin: 0;
+    }
+    @media print {
+      html,
+      body {
+        width: 57mm;
+        height: 40mm;
+      }
+      .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <div class="page">
+        <!-- Header -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+          "
+        >
+          <p style="font-family: Inter; font-size: 18px">
+            H I J A B I S T A<span
+              style="font-family: Inter; font-weight: bold; font-size: 18px"
+            >
+              H U B</span
+            >
+          </p>
+          <div>
+            <p style="margin-bottom: 0">HIJABISTAHUB BOUTIQUE</p>
+            <p style="text-align: center; margin-top: 0">
+              47-GF Jalan Setia Perdana,
+              <br />
+              BA U13/BA Setia Alam,
+              <br />
+              40170 Selangor
+              <br />
+              011 - 2666 5122
+            </p>
+          </div>
+        </div>
+
+        <!-- Receipt Information -->
+        <div
+          style="
+            border-bottom: 3px dashed #8e8e8e;
+            text-align: left;
+            line-height: 5px;
+          "
+        >
+          <p>No : 5929240</p>
+          <p>Cashier : Nora</p>
+          <p>Date : 17/01/2024 04:11 PM</p>
+          <p style="margin-bottom: 20px">Payment Method : Atome</p>
+        </div>
+
+        <!-- Item List -->
+        <div style="border-bottom: 3px dashed #8e8e8e">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin: 20px 0 20px 0;
+            "
+          >
+            <div style="display: flex; flex-direction: column">
+              <span>JUWITA KURUNG (BLACK)</span>
+              <span>Size : M</span>
+              <span>1 x RM209.00</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                text-align: right;
+              "
+            >
+              <span>RM209.00</span>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin: 10px 0 20px 0;
+            "
+          >
+            <div style="display: flex; flex-direction: column">
+              <span>LAILA VEIL (BLACK)</span>
+              <span>Size : FREE SIZE</span>
+              <span>1 x RM69.00</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                text-align: right;
+              "
+            >
+              <span>RM209.00</span>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin: 10px 0 20px 0;
+            "
+          >
+            <div style="display: flex; flex-direction: column">
+              <span>CROWN CODE 04</span>
+              <span>Size : FREE SIZE</span>
+              <span>1 x RM39.00</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                text-align: right;
+              "
+            >
+              <span>RM209.00</span>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin: 10px 0 20px 0;
+            "
+          >
+            <div style="display: flex; flex-direction: column">
+              <span>QAISER BAJU MELAYU (BLACK)</span>
+              <span>Size : M</span>
+              <span>1 x RM169.00</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                text-align: right;
+              "
+            >
+              <span>RM209.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total -->
+        <div style="line-height: 18px; margin-top: 20px">
+          <div style="display: flex; justify-content: space-between">
+            <span>Subtotal</span>
+            <span style="text-align: right">RM486.00</span>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <span>Discount</span>
+            <span style="text-align: right">RM0.00</span>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <span>Voucher</span>
+            <span style="text-align: right">RM0.00</span>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <span style="font-weight: 600">Total Amount</span>
+            <span style="font-weight: 600; text-align: right">RM486.00</span>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <p style="margin-bottom: 0; text-align: center">
+            THANK YOU FOR SHOPPING WITH US
+          </p>
+          <p style="margin-top: 0; text-align: center">
+            Good item sold are not refundable or exchange
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
